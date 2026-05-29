@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #071739,
+        #0b2447,
+        #102542
+    );
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+/* FORMULAS ANIMADAS */
+
+.formula{
+
+    position: fixed;
+
+    color: rgba(255,255,255,0.08);
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    animation: mover 12s linear infinite;
+
+    z-index: -1;
+}
+
+.formula1{
+    top: 10%;
+    left: -20%;
+}
+
+.formula2{
+    top: 30%;
+    left: -30%;
+}
+
+.formula3{
+    top: 60%;
+    left: -25%;
+}
+
+.formula4{
+    top: 80%;
+    left: -20%;
+}
+
+@keyframes mover{
+
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(1600px);
+    }
+}
+
+header{
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: rgba(0,0,0,0.3);
+
+    backdrop-filter: blur(10px);
+}
+
+header h1{
+
+    color: #6ec6ff;
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+header p{
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.menu{
+
+    position: sticky;
+
+    top: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,0.5);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.menu button{
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        45deg,
+        #1565c0,
+        #42a5f5
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.menu button:hover{
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 20px #64b5ff;
+}
+
+main{
+
+    padding: 40px;
+}
+
+.contenido{
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 40px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+h2{
+
+    color: #90caf9;
+
+    margin-bottom: 20px;
+}
+
+.bloque{
+
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,0.2);
+
+    border-radius: 15px;
+}
+
+form{
+
+    margin-top: 15px;
+}
+
+label{
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+input{
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+form button{
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        45deg,
+        #00b0ff,
+        #2979ff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover{
+
+    transform: scale(1.05);
+}
+
+.resultado{
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.4);
+
+    line-height: 1.8;
+}
+
+.oculto{
+    display: none;
+}
+
+footer{
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: rgba(0,0,0,0.5);
+}
+
+footer a{
+
+    color: #81d4fa;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media screen and (max-width: 900px){
+
+    body{
+
+        background: linear-gradient(
+            135deg,
+            #7dd3fc,
+            #38bdf8,
+            #0ea5e9
+        );
+
+        color: #002244;
+    }
+
+    header{
+
+        background: rgba(255,255,255,0.4);
+    }
+
+    .menu{
+
+        flex-direction: column;
+    }
+
+    .menu button{
+
+        background: linear-gradient(
+            45deg,
+            #0284c7,
+            #0ea5e9
+        );
+
+        color: white;
+    }
+
+    .contenido{
+
+        background: rgba(255,255,255,0.5);
+
+        color: #002244;
+    }
+
+    .bloque{
+
+        background: rgba(255,255,255,0.4);
+    }
+
+    h2{
+
+        color: #003566;
+    }
+
+    form button{
+
+        background: linear-gradient(
+            45deg,
+            #0369a1,
+            #38bdf8
+        );
+    }
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media screen and (max-width: 600px){
+
+    body{
+
+        background: linear-gradient(
+            135deg,
+            #001f3f,
+            #003566,
+            #001233
+        );
+
+        color: #d6ecff;
+    }
+
+    header h1{
+
+        font-size: 30px;
+    }
+
+    .menu button{
+
+        width: 100%;
+
+        background: linear-gradient(
+            45deg,
+            #001d3d,
+            #003566
+        );
+
+        color: #90e0ef;
+    }
+
+    .contenido{
+
+        background: rgba(0,0,0,0.4);
+
+        color: #d6ecff;
+    }
+
+    .bloque{
+
+        background: rgba(255,255,255,0.05);
+    }
+
+    h2{
+
+        color: #90e0ef;
+    }
+
+    form button{
+
+        width: 100%;
+    }
+
+    input{
+
+        font-size: 15px;
+    }
+
+}

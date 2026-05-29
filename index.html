@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Matemáticas que resuelven problemas
+    </title>
+
+    <link rel="stylesheet"
+        href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- ANIMACIONES MATEMÁTICAS -->
+
+    <div class="formula formula1">
+        Fibonacci
+    </div>
+
+    <div class="formula formula2">
+        π + ∑ + √ + ∞
+    </div>
+
+    <div class="formula formula3">
+        1,1,2,3,5,8,13...
+    </div>
+
+    <div class="formula formula4">
+        Números Primos
+    </div>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>
+            Matemáticas que resuelven problemas
+        </h1>
+
+        <p>
+            Proyecto Web usando Fibonacci y
+            Números Primos
+        </p>
+
+        <h3>
+            Estudiante: Brandon Nina Ticona
+        </h3>
+
+    </header>
+
+    <!-- MENÚ -->
+
+    <nav class="menu">
+
+        <button id="btnFib">
+            Fibonacci Ahorro
+        </button>
+
+        <button id="btnPrimo">
+            Primos Seguridad
+        </button>
+
+        <button id="btnCombinado">
+            Fibonacci + Primos
+        </button>
+
+    </nav>
+
+    <main>
+
+        <!-- PROBLEMA 1 -->
+
+        <section id="seccionFib"
+            class="contenido">
+
+            <h2>
+                Problema 1:
+                Fibonacci en ahorro progresivo
+            </h2>
+
+            <div class="bloque">
+
+                <h3>
+                    Contexto del problema
+                </h3>
+
+                <p>
+                    Muchas personas desean ahorrar
+                    dinero mensualmente, pero a veces
+                    no saben cuánto ahorrar cada mes.
+                    Este sistema propone usar la serie
+                    de Fibonacci para incrementar el
+                    ahorro de manera progresiva.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Explicación del algoritmo
+                </h3>
+
+                <p>
+                    El algoritmo utiliza la serie
+                    Fibonacci donde cada número es
+                    la suma de los dos anteriores.
+                    Cada valor representa el ahorro
+                    mensual.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Formulario de entrada
+                </h3>
+
+                <form>
+
+                    <label>
+                        Ingrese cantidad de meses:
+                    </label>
+
+                    <input type="number"
+                        id="meses">
+
+                    <button type="button"
+                        id="calcularFib">
+
+                        Calcular ahorro
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Resultado
+                </h3>
+
+                <div id="resultadoFib"
+                    class="resultado"></div>
+
+            </div>
+
+        </section>
+
+        <!-- PROBLEMA 2 -->
+
+        <section id="seccionPrimo"
+            class="contenido oculto">
+
+            <h2>
+                Problema 2:
+                Números primos en seguridad
+            </h2>
+
+            <div class="bloque">
+
+                <h3>
+                    Contexto del problema
+                </h3>
+
+                <p>
+                    Los números primos son utilizados
+                    en seguridad informática debido a
+                    sus propiedades matemáticas.
+                    Este sistema verifica si un código
+                    puede servir como seguridad básica.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Explicación del algoritmo
+                </h3>
+
+                <p>
+                    El algoritmo cuenta cuántas veces
+                    puede dividirse un número.
+                    Si tiene exactamente dos divisores,
+                    entonces es primo.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Formulario de entrada
+                </h3>
+
+                <form>
+
+                    <label>
+                        Código de 4 a 8 dígitos:
+                    </label>
+
+                    <input type="number"
+                        id="codigo">
+
+                    <button type="button"
+                        id="verificarPrimo">
+
+                        Verificar código
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Resultado
+                </h3>
+
+                <div id="resultadoPrimo"
+                    class="resultado"></div>
+
+            </div>
+
+        </section>
+
+        <!-- PROBLEMA 3 -->
+
+        <section id="seccionCombinado"
+            class="contenido oculto">
+
+            <h2>
+                Problema 3:
+                Fibonacci y primos combinados
+            </h2>
+
+            <div class="bloque">
+
+                <h3>
+                    Contexto del problema
+                </h3>
+
+                <p>
+                    Algunas aplicaciones matemáticas
+                    requieren identificar números que
+                    pertenecen a Fibonacci y además
+                    son números primos.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Explicación del algoritmo
+                </h3>
+
+                <p>
+                    Primero se genera la secuencia
+                    Fibonacci y luego cada número
+                    es evaluado para verificar si
+                    es primo.
+                </p>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Formulario de entrada
+                </h3>
+
+                <form>
+
+                    <label>
+                        Cantidad de términos:
+                    </label>
+
+                    <input type="number"
+                        id="terminos">
+
+                    <button type="button"
+                        id="calcularCombinado">
+
+                        Generar secuencia
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="bloque">
+
+                <h3>
+                    Resultado
+                </h3>
+
+                <div id="resultadoCombinado"
+                    class="resultado"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- CONCLUSIÓN -->
+
+    <footer>
+
+        <h2>
+            Conclusión
+        </h2>
+
+        <p>
+            Este proyecto demuestra cómo las
+            matemáticas pueden aplicarse en
+            problemas reales mediante Fibonacci
+            y números primos.
+        </p>
+
+        <h3>
+            Enlaces del proyecto
+        </h3>
+
+        <p>
+            Repositorio Git:
+            <a href="#">
+                Agregar enlace GitHub
+            </a>
+        </p>
+
+        <p>
+            Página publicada:
+            <a href="#">
+                Agregar enlace web
+            </a>
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
