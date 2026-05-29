@@ -141,7 +141,7 @@ index.html
 Agregar enlace del repositorio:
 
 ```plaintext
-https://github.com/usuario/repositorio
+https://github.com/brandonnt22/brandonnt22_desafioweb.git
 ```
 
 ---
