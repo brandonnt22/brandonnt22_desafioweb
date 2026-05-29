@@ -151,7 +151,7 @@ https://github.com/brandonnt22/brandonnt22_desafioweb.git
 Agregar enlace de publicación:
 
 ```plaintext
-https://usuario.github.io/proyecto
+https://brandonnt22.github.io/brandonnt22_desafioweb/
 ```
 
 ---
